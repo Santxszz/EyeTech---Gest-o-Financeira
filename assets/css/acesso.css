@@ -1,0 +1,8 @@
+.acesso { margin-top: 200px; }
+
+.logo { width: 90px; margin-bottom: 30px; }
+.input-group { margin: 15px; }
+.input-group-text { background: #FFF; color: #000; border-radius: 5px; border: none; }
+.form-control { background: #CCCCCC; border-radius: 5px; height: 42px; border: none; }
+
+.form-control::placeholder { text-align: center; font-weight: 700; ; }

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EyeTech - Gestão Financeira</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/4875795b23.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/4875795b23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/media/logo-mono.png" class="logo-brand" alt="Logo EyeTech Júnior" title="EyeTech Júnior">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto navbar-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="financeiro.html">Financeiro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fiscais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="relatórios.html">Relatórios</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav navbar-items-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown_menu--animated" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Gerenciar usuários</a></li>
+                              <li><a class="dropdown-item" href="#">Sair</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Minha conta</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="section-info-financeiro">
+            <div class="row">
+                <div class="col-sm-3 resumo-financeiro">
+                    <h3>Resumo Financeiro</h3>
+                    <h6> Resumo da empresa no dia de hoje. </h6>
+                    <hr>
+
+                    <div class="resumo-financeiro-saldos row">
+                        <div class="saldo">
+                            <h6> Saldo atual </h6>
+                            <h6> R$ 1.000,00 </h6>
+                        </div>
+                        <div class="saldo">
+                            <h6> Total de receitas à receber </h6>
+                            <h6> R$ 1.000,00 </h6>
+                        </div>
+                        <div class="saldo">
+                            <h6> Total de despesas à pagar </h6>
+                            <h6> R$ 1.000,00 </h6>
+                        </div>
+                        <div class="saldo">
+                            <h6> Previsão de receita </h6>
+                            <h6> R$ 1.000,00 </h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 resumo-movimentações">
+                    <h3>Últimas movimentações</h3>
+                    <h6> Movimentações feitas no sistema. </h6>
+                    <hr>
+                    <div class="resumo-financeiro-saldos row">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Data</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Situação</th>
+                                <th scope="col">Responsável</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">23/02/2023</th>
+                                <td>Recebimento de pagamento</td>
+                                <td>Entrada</td>
+                                <td>Erek C. Santos</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">23/02/2023</th>
+                                <td>Recebimento de pagamento</td>
+                                <td>Entrada</td>
+                                <td>Erek C. Santos</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">23/02/2023</th>
+                                <td>Recebimento de pagamento</td>
+                                <td>Entrada</td>
+                                <td>Erek C. Santos</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">23/02/2023</th>
+                                <td>Recebimento de pagamento</td>
+                                <td>Entrada</td>
+                                <td>Erek C. Santos</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">23/02/2023</th>
+                                <td>Pagamento de despesas</td>
+                                <td>Saída</td>
+                                <td>Alanda Barbosa</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 resumo-financeiro ">
+                    <h3>Metas da empresa</h3>
+                    <h6> Acompanhe o progresso das metas. </h6>
+                    <hr>
+
+                    <div class="resumo-metas">
+                        <h6> Meta geral 2023 </h6>
+                        <h6> R$ 345 de R$ 3.000,00 </h6><br>               
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-sm-3 acesso-rapido">
+                    <h3> Fácil Acesso </h3>
+                    <h6> Ações rápidas. </h6>
+                    <hr>
+                    <div class="acesso-rapido-buttons row">
+                        <a href="#" class="btn btn-acesso-rapido btn-primary btn-sm col-12"> Criar Meta </a>
+                        <a href="#" class="btn btn-acesso-rapido btn-danger btn-sm col-12"> Deletar Meta </a>
+                        <a href="#" class="btn btn-acesso-rapido btn-success btn-sm col-12"> Emitir NF-e </a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+    </div>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+</html>

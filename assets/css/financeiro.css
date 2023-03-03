@@ -1,0 +1,28 @@
+.financas-infos {  border-radius: 5px; margin-top: 90px; }
+
+.financeiro-infos { background-color: #fff;  padding: 30px; border-radius: 5px; }
+.financeiro-infos h3 { font-size: 14pt; font-weight: 700; color: #555555; }
+.financeiro-infos h6 { font-size: 10pt; font-weight: 600; color: #A9A9A9; }
+
+.ações-financeiras { background-color: #fff; padding: 30px; border-radius: 5px; }
+.ações-financeiras h3 { font-size: 14pt; font-weight: 700; color: #555555; }
+.ações-financeiras h6 { font-size: 10pt; font-weight: 600; color: #A9A9A9; }
+
+.contas-vinculadas { background-color: #fff; padding: 30px; border-radius: 5px; margin-bottom: 30px; }
+.contas-vinculadas h3 { font-size: 14pt; font-weight: 700; color: #555555; }
+.contas-vinculadas h6 { font-size: 10pt; font-weight: 600; color: #A9A9A9; }
+
+.banco-viculado{ margin: 10px; }
+.img-banco { float: right; border-radius: 50px; }
+
+.financeiro-saldos h6 { float: left; }
+.financeiro-saldos span { float: right; }
+
+.btn-categoria-filtro { margin: 10px 5px; font-size: 10pt;  padding: 5px 15px; background: #A9A9A9; text-align: center; border-radius: 30px; color: #000; font-weight: 700;}
+.btn-categoria-filtro:hover { background-color: #d8d8d8; transition: .2s; }
+
+@media screen and (max-width: 800px) {
+    .financas-infos { margin: 90px 15px; }
+    .financeiro-infos { margin: 0; }
+    .banco-viculado { padding: 5px; } 
+}

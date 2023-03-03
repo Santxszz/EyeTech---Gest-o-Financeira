@@ -1,0 +1,44 @@
+.section-info-financeiro { margin-top: 60px;  }
+
+
+/* ------------------------------------------------------------------------------------------ */
+.resumo-financeiro { background: #FFFFFF; border-radius: 5px; height: fit-content; margin: 15px; padding: 20px; }
+.resumo-financeiro > h3 { font-size: 14pt; font-weight: 700; color: #555555; }
+.resumo-financeiro > h6 { font-size: 10pt; font-weight: 600; color: #A9A9A9; }
+/* ------------------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------------------ */
+.resumo-financeiro-saldos { overflow: hidden; }
+
+.resumo-financeiro-saldos > .saldo { margin-top: 5px; margin-bottom: 5px }
+.resumo-financeiro-saldos > .saldo h6 { font-size: 10pt; }
+.resumo-financeiro-saldos > .saldo h6:nth-child(1) { float: left; font-weight: 700; }
+.resumo-financeiro-saldos > .saldo h6:nth-child(2) { float: right; font-weight: 600; }
+/* ------------------------------------------------------------------------------------------ */
+
+.resumo-movimentações { background-color: #FFFFFF; border-radius: 5px; margin: 15px; padding: 20px; }
+.resumo-movimentações > h3 { font-size: 14pt; font-weight: 700; color: #555555; }
+.resumo-movimentações > h6 { font-size: 10pt; font-weight: 600; color: #A9A9A9; }
+
+.resumo-movimentações { font-size: 10pt; }
+
+
+
+.resumo-metas h6 { font-size: 10pt; height: fit-content; }
+.resumo-metas h6:nth-child(1) { float: left; font-weight: 600; color: #A9A9A9; }
+.resumo-metas h6:nth-child(2) { float: right; font-weight: 700; color: #555555; }
+
+
+.acesso-rapido { background-color: #FFFFFF; border-radius: 5px; margin: 15px; padding: 20px; }
+.acesso-rapido > h3 { font-size: 14pt; font-weight: 700; color: #555555; }
+.acesso-rapido > h6 { font-size: 10pt; font-weight: 600; color: #A9A9A9; }
+
+.acesso-rapido-buttons { margin: 5px; padding: 5px; }
+.btn-acesso-rapido { margin: 5px 0px; }
+
+@media screen and (max-width: 800px) {
+    .section-info-financeiro { margin: 90px 15px; }
+    .resumo-financeiro { margin: 0; }
+    .resumo-movimentações { margin: 0; margin-top: 15px; margin-bottom: 15px; }
+    .acesso-rapido { margin: 0;   }
+  }
